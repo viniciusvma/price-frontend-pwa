@@ -1,0 +1,90 @@
+/* Container principal com alinhamento centralizado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* Título */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Garantir largura uniforme para todos os elementos */
+.shared-width {
+  width: 100%;
+  max-width: 400px;  /* Largura máxima uniforme */
+  margin: 10px 0;
+}
+
+/* Estilos para o container da cotação do dólar */
+.dolar-container,
+.result-container {
+  background-color: #4caf50;
+  border-radius: 8px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  width: 100%; /* Certificando-se de que os containers tenham a mesma largura do input */
+  box-sizing: border-box; /* Para garantir que o padding não afete a largura */
+}
+
+/* Tamanho e estilo dos textos dentro dos containers */
+.dolar-text,
+.result-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.dolar-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Estilos do input (valor da tonelada) */
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botão de calcular */
+.calculate-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Botão de largura 100% para ficar igual ao input */
+  box-sizing: border-box; /* Para garantir que o padding não afete a largura */
+}
+
+.calculate-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .shared-width {
+    max-width: 90%; /* Tornar os elementos mais responsivos no celular */
+  }
+}
